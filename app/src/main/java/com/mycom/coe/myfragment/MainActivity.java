@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.javaFragment, new ThreeFragment(), TAG)
+                        .replace(R.id.javaFragment,ThreeFragment.newInstance("Three F"), TAG)
                         .addToBackStack(null)
                         .commit();
             }
